@@ -45,7 +45,7 @@ countries_picked = st_tags(
     key="countries")
 
 
-data_before_bar = data_before_bar[data_before_bar['Country Charging The Tariff'].isin(countries_picked)]
+data_before_bar = data_before_bar[data_before_bar['Country'].isin(countries_picked)]
 
 fig = px.bar(data_before_bar, 
              x='Country',
