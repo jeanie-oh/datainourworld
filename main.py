@@ -45,10 +45,7 @@ countries_picked = st_tags(
     key="countries")
 
 
-countries_picked.extend(['Simple_Average','Country Charging The Tariff','Country'])
-st.write(countries_picked)
-data_before_bar = data_before_bar.filter(items=countries_picked)
-st.write(data_before_bar.head())
+data_before_bar = data_before_bar[data_before_bar['Country Charging The Tariff'].isin(countries_picked)]
 
 fig = px.bar(data_before_bar, 
              x='Country',
