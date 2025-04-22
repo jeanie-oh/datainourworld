@@ -25,6 +25,7 @@ data_before_bar=read_csv_with_percentage('BeforeTrump_Bar.csv','Simple_Average')
 data_before=read_csv_with_percentage('BeforeTrump.csv','Tariffs_US')
 data_before['Tariffs_Partner']=data_before['Tariffs_Partner'].str.rstrip('%').astype('float') / 100.0
 
+data_before_bar['Simple_Average']=data_before_bar['Simple_Average']*100
 
 url="https://wits.worldbank.org/"
 st.caption("Based on data from [WITS](%s). The latest comprehensive data that yields simple averages prior to the Trump tariffs is 2022." % url)
@@ -36,7 +37,7 @@ st.markdown("<h3 style='text-align: center; primaryColor: white; secondaryColor:
 country_list =['Brazil', 'India', 'Thailand','Vietnam', 'Indonesia','China', 'Malaysia','EU', 'Japan','South Korea', 'Canada','Israel', 'Colombia','Mexico', 'Singapore']
 
 countries_picked = st_tags(
-    label='Enter Keywords:',
+    label='Enter Trade Partner(s):',
     text='Select Countries',
     value=country_list,
     suggestions=country_list,
@@ -45,10 +46,8 @@ countries_picked = st_tags(
 
 
 countries_picked.extend(['Simple_Average','Country Charging The Tariff','Country'])
-
+st.write(countries_picked)
 data_before_bar = data_before_bar.filter(items=countries_picked)
-
-data_before_bar['Simple_Average']=data_before_bar['Simple_Average']*100
 
 fig = px.bar(data_before_bar, 
              x='Country',
