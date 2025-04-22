@@ -37,15 +37,15 @@ country_list =['Brazil', 'India', 'Thailand','Vietnam', 'Indonesia','China', 'Ma
 
 countries_picked = st_tags(
     label='Enter Keywords:',
-    text='Press select countries',
+    text='Select Countries',
     value=country_list,
     suggestions=country_list,
     maxtags=15,
     key="countries")
 
-print(countries_picked)
+countries_picked.append('Simple_Average','Country Charging The Tariff')
 
-data_before_bar = data_before_bar.filter(items=country_list)
+data_before_bar = data_before_bar.filter(items=countries_picked)
 
 data_before_bar['Simple_Average']=data_before_bar['Simple_Average']*100
 
