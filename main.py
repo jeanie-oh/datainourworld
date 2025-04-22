@@ -43,7 +43,7 @@ countries_picked = st_tags(
     maxtags=15,
     key="countries")
 
-country_list.append('Simple_Average','Country Charging The Tariff')
+country_list=country_list.append('Simple_Average','Country Charging The Tariff')
 print(country_list)
 
 data_before_bar = data_before_bar.filter(items=country_list)
