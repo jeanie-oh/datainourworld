@@ -33,9 +33,17 @@ st.caption("Based on data from [WITS](%s). The latest comprehensive data that yi
 st.markdown("<h3 style='text-align: center; primaryColor: white; secondaryColor: black;' >" \
 "Tariffs Before & After the Trump Administration</h3>", unsafe_allow_html=True)
 
-keywords = st_tags("Enter Keyword:", "Press enter to add more", ['Brazil', 'India', 'Thailand','Vietnam', 'Indonesia','China', 'Malaysia','EU', 'Japan','South Korea', 'Canada','Israel', 'Colombia','Mexico', 'Singapore'])
+country_list =['Brazil', 'India', 'Thailand','Vietnam', 'Indonesia','China', 'Malaysia','EU', 'Japan','South Korea', 'Canada','Israel', 'Colombia','Mexico', 'Singapore']
 
-country_list = st.write(keywords)
+countries_picked = st_tags(
+    label='Enter Keywords:',
+    text='Press select countries',
+    value=country_list,
+    suggestions=country_list,
+    maxtags=15,
+    key="countries")
+
+print(countries_picked)
 
 data_before_bar = data_before_bar.filter(items=country_list)
 
