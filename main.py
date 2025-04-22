@@ -31,8 +31,8 @@ url="https://wits.worldbank.org/"
 st.caption("Based on data from [WITS](%s). The latest comprehensive data that yields simple averages prior to the Trump tariffs is 2022." % url)
 
 # BEFORE AND AFTER TRUMP ADMINISTRATION
-st.markdown("<h3 style='text-align: center; primaryColor: white; secondaryColor: black;' >" \
-"Tariffs Before & After the Trump Administration</h3>", unsafe_allow_html=True)
+# st.markdown("<h3 style='text-align: center; primaryColor: white; secondaryColor: black;' >" \
+# "Tariffs Before & After the Trump Administration</h3>", unsafe_allow_html=True)
 
 country_list =['Brazil', 'India', 'Thailand','Vietnam', 'Indonesia','China', 'Malaysia','EU', 'Japan','South Korea', 'Canada','Israel', 'Colombia','Mexico', 'Singapore']
 
