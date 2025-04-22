@@ -28,8 +28,7 @@ data_before['Tariffs_Partner']=data_before['Tariffs_Partner'].str.rstrip('%').as
 data_before_bar['Simple_Average']=data_before_bar['Simple_Average']*100
 
 url="https://wits.worldbank.org/"
-st.caption("Based on data from [WITS](%s). The latest comprehensive data that provides Simple Applied Average % prior to the Trump tariffs is 2022. The purpose of this data is" \
-"to provide information around how much each government charged in tariffs to the United States before and after April 11, 2025." % url)
+st.caption("Based on data from [WITS](%s). The latest comprehensive data that provides 'Simple Applied Average %' prior to the Trump tariffs is 2022. The purpose of this data is to provide information around how much each government charged in tariffs to the United States before and after April 11, 2025." % url)
 
 # BEFORE AND AFTER TRUMP ADMINISTRATION
 # st.markdown("<h3 style='text-align: center; primaryColor: white; secondaryColor: black;' >" \
