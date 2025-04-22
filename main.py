@@ -27,6 +27,7 @@ data_before['Tariffs_Partner']=data_before['Tariffs_Partner'].str.rstrip('%').as
 
 data_before_bar['Simple_Average']=data_before_bar['Simple_Average']*100
 
+url='https://wits.worldbank.org/'
 st.caption("Based on data from [WITS](%s). The latest comprehensive data that provides 'Simple Applied Average Rates' prior to the Trump tariffs is 2022. " \
 "The purpose of this data is to provide information around how much each government charged in tariffs to the United States before and after April 11, 2025." % url)
 
@@ -74,8 +75,8 @@ st.caption("""
            The Simple Applied Average appears to be the closest approximation of tariff rates that goverments charge in this context. Detailed definitions available on <a href='https://wits.worldbank.org/Bilateral-Tariff-Technical-Note.html'>this link</a>.
         2. Year 2022 figures were used because this was the most recent applied simple average tariff rate computation found on WITS.
            WTO and more recent data sources that provide 2023 and 2024 figures do not compute an applied simple average tariff.<br> 
-        3. Current US tariff summary average is based on <a href=https://wits.worldbank.org/>the BBC</a> figures released April 10, 2025.<br>
-        4. US current tariff to China is 140 percent and China's retaliation rate is 125 percent. This is not depicted in the graph as it is too large, instead, it is noted in the below table""" % (def_url, url), unsafe_allow_html=True)
+        3. Current US tariff summary average is based on <a href='https://www.bbc.com/news/articles/c5ypxnnyg7jo'>the BBC</a> figures released April 10, 2025.<br>
+        4. US current tariff to China is 140 percent and China's retaliation rate is 125 percent. This is not depicted in the graph as it is too large, instead, it is noted in the below table""" , unsafe_allow_html=True)
 
 
 data_before_table=pd.read_csv('BeforeTrump_Table.csv')
