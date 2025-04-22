@@ -158,6 +158,7 @@ dependencies = [
     { name = "plotly" },
     { name = "streamlit" },
     { name = "streamlit-shadcn-ui" },
+    { name = "streamlit-tags" },
 ]
 
 [package.metadata]
@@ -165,6 +166,7 @@ requires-dist = [
     { name = "plotly", specifier = ">=6.0.1" },
     { name = "streamlit", specifier = ">=1.44.1" },
     { name = "streamlit-shadcn-ui", specifier = ">=0.1.18" },
+    { name = "streamlit-tags", specifier = ">=1.2.8" },
 ]
 
 [[package]]
@@ -950,6 +952,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/0a/13/1188fad0a7a4c54cc3d2e56a7723f8a4155006a4617ab73ae9f7106c765a/streamlit-shadcn-ui-0.1.18.tar.gz", hash = "sha256:37a4b95869cdbd285310e7da0cc6130670b055a4bb48a3442f228a26e71b82d6", size = 262069 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/12/34/4ec3e3569a36cca3f6f0c8a25e9344b6acce9d21308552f17531eec5d034/streamlit_shadcn_ui-0.1.18-py3-none-any.whl", hash = "sha256:6e1728f0f1d24508a17fc030ac0216a35077980e80585a0ced406ece822c0168", size = 276402 },
+]
+
+[[package]]
+name = "streamlit-tags"
+version = "1.2.8"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "streamlit" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c8/c9/047d5e24f3ca5d31ed8c0ced4ed2e6ac20db5514c7fc814583b0c495e6ee/streamlit_tags-1.2.8.tar.gz", hash = "sha256:9ea46b21f206dc73164e59e3c800a96c863c90af57afde20115f001a6d986583", size = 561247 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/19/56/75000c009c3cdbb960783580dd3b51e1483b3cfa8f2967669fccd4cff894/streamlit_tags-1.2.8-py3-none-any.whl", hash = "sha256:c71b10666f3fce67d8e0b3c089aa50dc48830d310223fb88005b08f157586f95", size = 2678564 },
 ]
 
 [[package]]

@@ -5,6 +5,7 @@ import numpy as np
 from local_components import card_container
 from streamlit_shadcn_ui import slider, input, textarea, radio_group, switch
 import plotly.express as px
+from streamlit_tags import st_tags
 
 st.set_page_config(
     page_title="Data in our World",
@@ -32,6 +33,11 @@ st.caption("Based on data from [WITS](%s). The latest comprehensive data that yi
 st.markdown("<h3 style='text-align: center; primaryColor: white; secondaryColor: black;' >" \
 "Tariffs Before & After the Trump Administration</h3>", unsafe_allow_html=True)
 
+keywords = st_tags("Enter Keyword:", "Press enter to add more", ['Brazil', 'India', 'Thailand','Vietnam', 'Indonesia','China', 'Malaysia','EU', 'Japan','South Korea', 'Canada','Israel', 'Colombia','Mexico', 'Singapore'])
+
+country_list = st.write(keywords)
+
+data_before_bar = data_before_bar.filter(items=country_list)
 
 data_before_bar['Simple_Average']=data_before_bar['Simple_Average']*100
 
