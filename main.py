@@ -37,7 +37,7 @@ st.markdown("<h3 style='text-align: center; primaryColor: white; secondaryColor:
 country_list =['Brazil', 'India', 'Thailand','Vietnam', 'Indonesia','China', 'Malaysia','EU', 'Japan','South Korea', 'Canada','Israel', 'Colombia','Mexico', 'Singapore']
 
 countries_picked = st_tags(
-    label='Enter Trade Partner(s):',
+    label='Enter Trade Partner(s) - only top 15 trading partners available:',
     text='Select Countries',
     value=country_list,
     suggestions=country_list,
