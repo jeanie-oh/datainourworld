@@ -78,6 +78,7 @@ st.caption("""
 
 
 data_before_table=pd.read_csv('BeforeTrump_Table.csv')
+data_before_table=data_before_table[data_before_table['Country'].isin(countries_picked)]
 st.dataframe(data_before_table, hide_index=True,row_height=20) 
 
 
