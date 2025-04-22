@@ -35,8 +35,8 @@ st.markdown("<h3 style='text-align: center; primaryColor: white; secondaryColor:
 
 country_list =['Brazil', 'India', 'Thailand','Vietnam', 'Indonesia','China', 'Malaysia','EU', 'Japan','South Korea', 'Canada','Israel', 'Colombia','Mexico', 'Singapore']
 
-# country_list.append('Simple_Average','Country Charging The Tariff')
-st.write(type(country_list))
+country_list.append('Simple_Average','Country Charging The Tariff')
+st.write(country_list)
 
 countries_picked = st_tags(
     label='Enter Keywords:',
