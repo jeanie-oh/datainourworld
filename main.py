@@ -45,7 +45,6 @@ countries_picked = st_tags(
 
 
 countries_picked.extend(['Simple_Average','Country Charging The Tariff','Country'])
-st.write(countries_picked)
 
 data_before_bar = data_before_bar.filter(items=countries_picked)
 
