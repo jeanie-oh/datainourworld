@@ -70,7 +70,11 @@ fig.update_layout(legend=dict(
 # fig.update_layout(legend_traceorder="reversed")
 st.plotly_chart(fig)
 
-st.caption("""NOTES<br>
+data_before_table=pd.read_csv('BeforeTrump_Table.csv')
+data_before_table=data_before_table[data_before_table['Country'].isin(countries_picked)]
+st.dataframe(data_before_table, hide_index=True,row_height=20) 
+
+st.caption("""<u>NOTES</u><br>
         1. Simple Applied Average figures were used. The Simple Applied Average was preferred to the MFN Simple Average because it accounts for special trade agreements in place (eg - NAFTA) between countries.
            The Simple Applied Average was preferred to the Weighted Applied Average because the Weighted Applied Average incorporates trade volume which is driven by consumer behavior and cannot be directly controlled by government. 
            The Simple Applied Average appears to be the closest approximation of tariff rates that goverments charge in this context. Detailed definitions available on <a href='https://wits.worldbank.org/Bilateral-Tariff-Technical-Note.html'>this link</a>.<br>
@@ -79,11 +83,6 @@ st.caption("""NOTES<br>
         3. Current US tariff summary average is based on <a href='https://www.bbc.com/news/articles/c5ypxnnyg7jo'>the BBC</a> figures released April 10, 2025.<br>
         4. US current tariff to China is 140 percent and China's retaliation rate is 125 percent. This is not depicted in the graph as it is too large, instead, it is noted in the below table<br>
         5. Source data for 2022 Simple Applied Avgs were taken from <a href='https://wits.worldbank.org/CountryProfile/en/Country/USA/Year/2022/TradeFlow/EXPIMP'>WITS country profile links</a> specifying trade partners, downloads were performed for each country's data. This data can be replicated by clicking on 'Show More Columns' and checking 'AHS Simple Average (%)' under 'Tariff - Effectively Applied'""" , unsafe_allow_html=True)
-
-
-data_before_table=pd.read_csv('BeforeTrump_Table.csv')
-data_before_table=data_before_table[data_before_table['Country'].isin(countries_picked)]
-st.dataframe(data_before_table, hide_index=True,row_height=20) 
 
 
 # US COMPARISON AFTER TRUMP
