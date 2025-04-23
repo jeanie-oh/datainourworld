@@ -73,11 +73,12 @@ st.plotly_chart(fig)
 st.caption("""NOTES<br>
         1. Simple Applied Average figures were used. The Simple Applied Average was preferred to the MFN Simple Average because it accounts for special trade agreements in place (eg - NAFTA) between countries.
            The Simple Applied Average was preferred to the Weighted Applied Average because the Weighted Applied Average incorporates trade volume which is driven by consumer behavior and cannot be directly controlled by government. 
-           The Simple Applied Average appears to be the closest approximation of tariff rates that goverments charge in this context. Detailed definitions available on <a href='https://wits.worldbank.org/Bilateral-Tariff-Technical-Note.html'>this link</a>.
+           The Simple Applied Average appears to be the closest approximation of tariff rates that goverments charge in this context. Detailed definitions available on <a href='https://wits.worldbank.org/Bilateral-Tariff-Technical-Note.html'>this link</a>.<br>
         2. Year 2022 figures were used because this was the most recent applied simple average tariff rate computation found on WITS.
            WTO and more recent data sources that provide 2023 and 2024 figures do not compute a Simple Applied Average Rate for tariffs.<br> 
         3. Current US tariff summary average is based on <a href='https://www.bbc.com/news/articles/c5ypxnnyg7jo'>the BBC</a> figures released April 10, 2025.<br>
-        4. US current tariff to China is 140 percent and China's retaliation rate is 125 percent. This is not depicted in the graph as it is too large, instead, it is noted in the below table""" , unsafe_allow_html=True)
+        4. US current tariff to China is 140 percent and China's retaliation rate is 125 percent. This is not depicted in the graph as it is too large, instead, it is noted in the below table<br>
+        5. Source data for 2022 Simple Applied Avgs were taken from <a href='https://wits.worldbank.org/CountryProfile/en/Country/USA/Year/2022/TradeFlow/EXPIMP'>WITS country profile links</a> specifying trade partners, downloads were performed for each country's data""" , unsafe_allow_html=True)
 
 
 data_before_table=pd.read_csv('BeforeTrump_Table.csv')
