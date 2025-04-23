@@ -12,7 +12,7 @@ st.set_page_config(
     page_title="Data in our World",
     page_icon="chart_with_upwards_trend",
     layout="wide",
-    initial_sidebar_state="hidden"
+    initial_sidebar_state="collapsed",
 )
 
 
