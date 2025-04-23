@@ -70,7 +70,7 @@ fig.update_layout(legend=dict(
 # fig.update_layout(legend_traceorder="reversed")
 st.plotly_chart(fig)
 
-st.caption("""
+st.caption("""NOTES<br>
         1. Simple Applied Average figures were used. The Simple Applied Average was preferred to the MFN Simple Average because it accounts for special trade agreements in place (eg - NAFTA) between countries.
            The Simple Applied Average was preferred to the Weighted Applied Average because the Weighted Applied Average incorporates trade volume which is driven by consumer behavior and cannot be directly controlled by government. 
            The Simple Applied Average appears to be the closest approximation of tariff rates that goverments charge in this context. Detailed definitions available on <a href='https://wits.worldbank.org/Bilateral-Tariff-Technical-Note.html'>this link</a>.
