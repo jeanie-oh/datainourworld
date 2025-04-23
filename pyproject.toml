@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "plotly>=6.0.1",
+    "st-pages>=1.0.1",
     "streamlit>=1.44.1",
     "streamlit-shadcn-ui>=0.1.18",
     "streamlit-tags>=1.2.8",
