@@ -86,7 +86,7 @@ st.dataframe(data_before_table, hide_index=True,row_height=20)
 
 
 # US COMPARISON AFTER TRUMP
-st.markdown("<h3 style='text-align: center; primaryColor: white; secondaryColor: black;' >Tariffs Charged by US as of April 10, 2025</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; primaryColor: white; secondaryColor: black;' >Tariffs Charged by US as of April 10, 2025 vs 2022</h3>", unsafe_allow_html=True)
 
 data_after = read_csv_with_percentage('AfterTrump.csv','Simple_Average')
 data_after['Simple_Average']=data_after['Simple_Average']*100
