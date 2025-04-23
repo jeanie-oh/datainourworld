@@ -12,18 +12,9 @@ st.set_page_config(
     page_title="Data in our World",
     page_icon="chart_with_upwards_trend",
     layout="wide",
+    initial_sidebar_state="hidden"
 )
 
-st.markdown(
-    """
-    <style>
-    section[data-testid="stSidebar"][aria-expanded="true"]{
-      display: none;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 # TITLE OF THE WEBPAGE
 st.header("Tariffs Before and After the Trump Administration", divider="gray")
