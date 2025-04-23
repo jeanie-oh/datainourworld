@@ -30,7 +30,7 @@ data_before_bar['Simple_Average']=data_before_bar['Simple_Average']*100
 url='https://wits.worldbank.org/'
 st.caption("Based on data from [WITS](%s). The latest comprehensive data that provides 'Simple Applied Average Rates' prior to the Trump tariffs is 2022. " \
 "The purpose of this data is to provide information around how much each government charged in tariffs to the United States before and after April 11, 2025. We chose this date because the Trump administration" \
-"imposed their tariffs on April 10th and the following day (April 11th) includes retaliation tariff rates of US trade partners." % url)
+" imposed their tariffs on April 10th and the following day (April 11th) includes retaliation tariff rates of US trade partners." % url)
 
 # BEFORE AND AFTER TRUMP ADMINISTRATION
 # st.markdown("<h3 style='text-align: center; primaryColor: white; secondaryColor: black;' >" \
