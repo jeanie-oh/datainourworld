@@ -45,11 +45,6 @@ data_before=format_percentage(data_before,'Tariffs_Partner')
 
 data_before_bar['Simple_Average']=data_before_bar['Simple_Average']*100
 
-url='https://wits.worldbank.org/'
-st.text("Based on data from [WITS](%s). The latest comprehensive data that provides 'Simple Applied Average Rates' prior to the Trump tariffs is 2022. " \
-"The purpose of this data is to provide information around how much each government charged in tariffs to the United States before and after April 11, 2025. We chose this date because the Trump administration" \
-" imposed their tariffs on April 10th and the following day (April 11th) includes retaliation tariff rates of US trade partners." % url)
-
 # BEFORE AND AFTER TRUMP ADMINISTRATION
 # st.markdown("<h3 style='text-align: center; primaryColor: white; secondaryColor: black;' >" \
 # "Tariffs Before & After the Trump Administration</h3>", unsafe_allow_html=True)
@@ -102,6 +97,11 @@ st.caption("""<u>NOTES</u><br>
         4. US current tariff to China is 140 percent and China's retaliation rate is 125 percent. This is not depicted in the graph as it is too large, instead, it is noted in the below table<br>
         5. Source data for 2022 Simple Applied Avgs were taken from <a href='https://wits.worldbank.org/CountryProfile/en/Country/USA/Year/2022/TradeFlow/EXPIMP'>WITS country profile links</a> specifying trade partners. Downloads were performed for each country's data. This data can be replicated by clicking on 'Show More Columns' and checking 'AHS Simple Average (%)' under 'Tariff - Effectively Applied'""" , unsafe_allow_html=True)
 
+
+url='https://wits.worldbank.org/'
+st.text("Based on data from [WITS](%s). The latest comprehensive data that provides 'Simple Applied Average Rates' prior to the Trump tariffs is 2022. " \
+"The purpose of this data is to provide information around how much each government charged in tariffs to the United States before and after April 11, 2025. We chose this date because the Trump administration" \
+" imposed their tariffs on April 10th and the following day (April 11th) includes retaliation tariff rates of US trade partners." % url)
 
 # US COMPARISON AFTER TRUMP
 st.markdown("<h3 style='text-align: center; primaryColor: white; secondaryColor: black;' >Tariffs Charged by US as of April 10, 2025 vs 2022</h3>", unsafe_allow_html=True)
