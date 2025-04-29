@@ -134,8 +134,4 @@ st.plotly_chart(fig2)
 st.caption("Updated as of April 10, 2025")
 
 
-discourse_url = "https://jeanie-oh-datainourworld-main-0rxtkt.streamlit.app/Tariffs"
-topic_id = 'Tariffs'
-
-st_discourse(discourse_url, topic_id)
 
