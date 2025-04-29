@@ -6,6 +6,7 @@ from local_components import card_container
 from streamlit_shadcn_ui import slider, input, textarea, radio_group, switch
 import plotly.express as px
 from streamlit_tags import st_tags
+from streamlit_discourse import st_discourse
 
 
 st.set_page_config(
@@ -133,20 +134,8 @@ st.plotly_chart(fig2)
 st.caption("Updated as of April 10, 2025")
 
 
+discourse_url = "https://jeanie-oh-datainourworld-main-0rxtkt.streamlit.app/Tariffs"
+topic_id = 'Tariffs'
 
+st_discourse(discourse_url, topic_id)
 
-
-st.html("""<script>
- 
-    var disqus_config = function () {
-    this.page.url = 'https://jeanie-oh-datainourworld-main-0rxtkt.streamlit.app/Tariffs';  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = 'Tariffs'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://datainourworld-com.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script></div>""")
