@@ -136,12 +136,8 @@ st.caption("Updated as of April 10, 2025")
 
 
 
-st.markdown("""
-            <script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    
+st.html("""<script>
+ 
     var disqus_config = function () {
     this.page.url = 'https://jeanie-oh-datainourworld-main-0rxtkt.streamlit.app/Tariffs';  // Replace PAGE_URL with your page's canonical URL variable
     this.page.identifier = 'Tariffs'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
@@ -153,5 +149,4 @@ st.markdown("""
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
     })();
-</script></div>
-            """, unsafe_allow_html=True)
+</script></div>""")
