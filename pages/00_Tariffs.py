@@ -45,7 +45,7 @@ data_before=format_percentage(data_before,'Tariffs_Partner')
 data_before_bar['Simple_Average']=data_before_bar['Simple_Average']*100
 
 url='https://wits.worldbank.org/'
-st.caption("Based on data from [WITS](%s). The latest comprehensive data that provides 'Simple Applied Average Rates' prior to the Trump tariffs is 2022. " \
+st.text("Based on data from [WITS](%s). The latest comprehensive data that provides 'Simple Applied Average Rates' prior to the Trump tariffs is 2022. " \
 "The purpose of this data is to provide information around how much each government charged in tariffs to the United States before and after April 11, 2025. We chose this date because the Trump administration" \
 " imposed their tariffs on April 10th and the following day (April 11th) includes retaliation tariff rates of US trade partners." % url)
 
@@ -134,3 +134,24 @@ st.caption("Updated as of April 10, 2025")
 
 
 
+
+
+st.markdown("""
+            <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    
+    var disqus_config = function () {
+    this.page.url = 'https://jeanie-oh-datainourworld-main-0rxtkt.streamlit.app/Tariffs';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = 'Tariffs'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://datainourworld-com.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script></div>
+            """, unsafe_allow_html=True)
